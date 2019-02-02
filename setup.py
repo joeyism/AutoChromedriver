@@ -21,8 +21,7 @@ setup(
         packages = ['AutoChromedriver'], # this must be the same as the name above
         version = version,
         description = 'Downloads and unzips chromedriver to curent directory',
-        long_description=README,
-        long_description_content_type="text/markdown"
+        long_description=long_description,
         author = 'joeyism',
         author_email = 'joeyism101@gmail.com',
         url = 'https://github.com/joeyism/autochromedriver', # use the URL to the github repo
