@@ -18,7 +18,7 @@ with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
 
 setup(
         name = 'AutoChromedriver',
-        packages = ['autochromedriver'], # this must be the same as the name above
+        packages = ['AutoChromedriver'], # this must be the same as the name above
         version = version,
         description = 'Downloads and unzips chromedriver to curent directory',
         author = 'joeyism',
