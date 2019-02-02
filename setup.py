@@ -22,6 +22,9 @@ setup(
         version = version,
         description = 'Downloads and unzips chromedriver to curent directory',
         long_description=long_description,
+        entry_points = {
+            "console_scripts": ['autochromedriver = AutoChromedriver.cli:main']
+        },
         author = 'joeyism',
         author_email = 'joeyism101@gmail.com',
         url = 'https://github.com/joeyism/autochromedriver', # use the URL to the github repo
