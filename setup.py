@@ -23,7 +23,7 @@ setup(
         description = 'Downloads and unzips chromedriver to curent directory',
         author = 'joeyism',
         author_email = 'joeyism101@gmail.com',
-        url = 'https://github.com/joeyism/linkedin_scraper', # use the URL to the github repo
+        url = 'https://github.com/joeyism/autochromedriver', # use the URL to the github repo
         download_url = 'https://github.com/joeyism/autochromedriver' + version + '.tar.gz',
         keywords = ['chromedriver', 'selenium', 'auto', 'automatic', 'download'], 
         classifiers = [],
