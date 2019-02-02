@@ -9,6 +9,13 @@ pip3 install --user autochromedriver
 
 ## Usage
 
+### Commandline
+
+```bash
+autochromdriver [optional:version]
+```
+
+### Library
 ```python
 import AutoChromedriver
 
