@@ -14,6 +14,16 @@ Installation
 Usage
 -----
 
+Commandline
+^^^^^^^^^^^
+
+.. code-block:: bash
+
+   autochromdriver [optional:version]
+
+Library
+^^^^^^^
+
 .. code-block:: python
 
    import AutoChromedriver
