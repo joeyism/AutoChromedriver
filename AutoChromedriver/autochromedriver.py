@@ -17,7 +17,8 @@ os_driver_map = {
 def _get_zipfile_url_(version, driveros):
     return "https://chromedriver.storage.googleapis.com/{}/chromedriver_{}.zip".format(version, driveros)
 
-def download_chromedriver(version="2.46"):
+def download_chromedriver(version="2.46", location=None):
+    chromedriver_fp = "./chromedriver"
     try:
         driveros = os_driver_map[sys.platform] 
     except:
@@ -27,4 +28,7 @@ def download_chromedriver(version="2.46"):
     r = requests.get(zip_file_url)
     z = zipfile.ZipFile(io.BytesIO(r.content))
     z.extractall()
-    os.chmod("./chromedriver", stat.S_IXUSR)
+    os.chmod(chromedriver_fp, stat.S_IXUSR)
+
+    if location:
+        os.rename(chromedriver_fp, os.path.join(location, "chromedriver"))
