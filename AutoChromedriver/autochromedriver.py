@@ -5,6 +5,7 @@ import os
 import stat
 
 import requests
+from AutoChromedriver.chromedriver_lib import ChromedriverLib
 
 os_driver_map = {
     "linux": "linux64",
@@ -17,7 +18,14 @@ os_driver_map = {
 def _get_zipfile_url_(version, driveros):
     return "https://chromedriver.storage.googleapis.com/{}/chromedriver_{}.zip".format(version, driveros)
 
-def download_chromedriver(version="2.46", location=None):
+def download_chromedriver(version=None, location=None):
+    """
+    Downloads chromedriver. If version isn't specified, it downloads the latest one by default
+    """
+    if version is None:
+        lib = ChromedriverLib()
+        version = lib.get_latest_version()
+        
     chromedriver_fp = "./chromedriver"
     try:
         driveros = os_driver_map[sys.platform] 
