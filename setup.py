@@ -31,5 +31,5 @@ setup(
         download_url = 'https://github.com/joeyism/autochromedriver' + version + '.tar.gz',
         keywords = ['chromedriver', 'selenium', 'auto', 'automatic', 'download'], 
         classifiers = [],
-        install_requires=['selenium'],
+        install_requires=['selenium', 'beautifulsoup4'],
         )
