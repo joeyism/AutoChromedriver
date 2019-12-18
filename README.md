@@ -16,6 +16,19 @@ autochromdriver [optional:version]
 ```
 
 ### Library
+If you want to download the latest version, run 
+```python
+import AutoChromedriver
+
+AutoChromedriver.download_chromedriver()
+```
+If you want to download a specific version, run
+```python
+import AutoChromedriver
+
+AutoChromedriver.download_chromedriver(version="2.46")
+```
+If you want to download a specific version to a specific location, run 
 ```python
 import AutoChromedriver
 

@@ -28,7 +28,7 @@ Library
 
    import AutoChromedriver
 
-   AutoChromedriver.download_chromedriver()
+   AutoChromedriver.download_chromedriver(version="2.46", location=".")
 
 Documentation
 -------------
